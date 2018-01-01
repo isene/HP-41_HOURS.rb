@@ -2,7 +2,7 @@
 A tool to update and read the HP-41 HOURSF file (hours registration for consultants)
 
 ## NAME
-HP-41CL_HOURS.rb - A tool to update read the HP-41 HOURSF file from the program "HOURS" from the HP-41 ISENE ROM (https://github.com/isene/hp-41_isene-rom)
+HP-41CL_HOURS.rb - A tool to update read the HP-41 HOURSF file from the program "HOURS" from the HP-41 ISENE ROM (https://github.com/isene/hp-41_isene-rom) or the more advanced stand-alone HOURS program (https://github.com/isene/hp-41_hours).
 
 ## SYNOPSIS
 HP-41CL_HOURS.rb [-fvh] [long-options] [LIFimageFILE]
