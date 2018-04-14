@@ -17,3 +17,6 @@ Reads and output the content of the HOURSF file residing in the LIF image file, 
 
 -v, --version Show the version of HP-41_HOURS.rb
 
+## License
+This software is released into the Public Domain.
+
