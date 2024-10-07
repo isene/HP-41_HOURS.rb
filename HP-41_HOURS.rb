@@ -48,17 +48,17 @@ lif_file = File.join(lif_dir, "41.lif")
 opts.each do |opt, arg|
   case opt
     when "--file"
-	  if not ARGV[0]
-		puts "No LIF image file specified."
-		exit
-	  end
-	  lif_file = ARGV[0]
-	  lif_dir  = File.dirname(lif_file)
+			if not ARGV[0]
+				puts "No LIF image file specified."
+			exit
+			end
+			lif_file = ARGV[0]
+			lif_dir  = File.dirname(lif_file)
     when "--help"
       help
       exit
     when "--version"
-	  puts "\nHP-41CL_HOURS.rb version: " + prgmversion.to_s + "\n\n"
+			puts "\nHP-41CL_HOURS.rb version: " + prgmversion.to_s + "\n\n"
       exit
   end
 end
