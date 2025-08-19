@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="200" fill="#0a0e1a"/>
+  
+  <!-- Clock face -->
+  <circle cx="100" cy="100" r="70" fill="#1a1e2a" stroke="#444" stroke-width="3"/>
+  
+  <!-- Hour markers -->
+  <g stroke="#666" stroke-width="2">
+    <line x1="100" y1="40" x2="100" y2="50"/>
+    <line x1="140" y1="60" x2="135" y2="65"/>
+    <line x1="160" y1="100" x2="150" y2="100"/>
+    <line x1="140" y1="140" x2="135" y2="135"/>
+    <line x1="100" y1="160" x2="100" y2="150"/>
+    <line x1="60" y1="140" x2="65" y2="135"/>
+    <line x1="40" y1="100" x2="50" y2="100"/>
+    <line x1="60" y1="60" x2="65" y2="65"/>
+  </g>
+  
+  <!-- Clock hands with rotation -->
+  <!-- Hour hand -->
+  <line x1="100" y1="100" x2="100" y2="70" stroke="#CC342D" stroke-width="4" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="12s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Minute hand -->
+  <line x1="100" y1="100" x2="100" y2="50" stroke="#f0f0f0" stroke-width="3" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="2s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Center dot -->
+  <circle cx="100" cy="100" r="4" fill="#666"/>
+  
+  <!-- HP-41 display style at bottom -->
+  <rect x="60" y="135" width="80" height="20" fill="#3a4a3a" stroke="#555" stroke-width="1" rx="2"/>
+  <text x="100" y="148" font-family="monospace" font-size="9" fill="#00ff00" text-anchor="middle">HMS 12:34:56</text>
+  
+  <!-- Ruby gem -->
+  <g transform="translate(30, 30) scale(0.25)">
+    <path d="M -20 -10 L 20 -10 L 30 0 L 20 10 L -20 10 L -30 0 Z" fill="#CC342D" opacity="0.6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="185" font-family="monospace" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">HP-41 HOURS</text>
+</svg>
